@@ -1,3 +1,6 @@
+Python 3.7
+
+В командной строке набираешь:
 pip install pyaudio
 ...sound
 ...speech_recognitio
