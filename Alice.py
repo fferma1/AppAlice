@@ -75,3 +75,5 @@ class VA:
 
 Alice = VA()
 Alice.main_loop()
+
+print('Новая версия')
