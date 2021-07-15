@@ -35,6 +35,7 @@ class VA:
 
     def l_active(self,*args: tuple):
         print('Активный режим')
+        ram.initram()
         while True:
             with ram.m:
                 try:
@@ -54,6 +55,7 @@ class VA:
 
 
     def l_passive(self):
+        ram.initram()
         print('Пассивный режим')
         ram.r.energy_threshold = 20
         stop_listening = ram.r.listen_in_background(ram.m, self.callback, phrase_time_limit=1.5)
@@ -76,4 +78,3 @@ class VA:
 Alice = VA()
 Alice.main_loop()
 
-print('Новая версия')
